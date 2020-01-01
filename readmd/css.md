@@ -96,19 +96,51 @@ CSS负责结构、表现、行为中的表现
     
     div p.hello {}
     ```
-* 后代元素选择器
-```css
-祖先元素 后代元素 {}
+* 层级选择器
+    * 后代元素选择器
+        ```css
+        祖先元素 后代元素 {}
+        
+        div span {}
+        ```
+    * 子元素选择器
+        选中指定元素的指定子元素
+        ```css
+        父元素 > 子元素 {}
+        
+        div > p {}
+        ```
+    * prev + next
+        ```text
+        匹配跟在 prev 后的 next 这个兄弟元素
+        ```
+    * prev ~ siblings
+        ```text
+        查找与prev同辈的 siblings 所有兄弟元素（不包括prev）
+        ```
+* 属性选择器
+```text
+[attribute]
+有属性attribute
 
-div span {}
+[attribute=value]
+attribute值 等于 value
+
+[attribute!=value]
+attribute值 不等于 value
+
+[attribute^=value]
+属性attribute名已value开头
+
+[attribute$=value]
+属性attribute名以value结尾
+
+[attribute*=value]
+属性attribute包含value
+
+[attrSel1][attrSel2][attrSelN]
+多个属性选择器为与关系，同时满足这些选择器
 ```
-* 子元素选择器
-    选中指定元素的指定子元素
-    ```css
-    父元素 > 子元素 {}
-    
-    div > p {}
-    ```
 
 ### css声明块
 一个声明就是一个样式，以k:v键值对行使表示
@@ -164,5 +196,28 @@ font-size: 20px;
 * a元素可以包含任意元素，除了a本身
 * p元素不能包含任何块元素
 
+## 伪类和伪元素
+伪类用来表示元素所处的一个特殊的状态，伪元素用来表示元素所在的位置
 
-
+* :link
+    >表示一个普通的链接（未访问过的链接）
+* :visited
+    >表示访问过的链接
+* :hover
+    >鼠标移入的链接，也可以为其他元素设置hover
+* :active
+    >正在被点击的链接，也可以为其他元素设置active
+* :focus
+    >表示元素获取焦点的状态，一般用于文本框
+* ::selection
+    >表示内容被选中的状态，在火狐中使用::-moz-selection来代替
+* :first-letter
+    >表示第一个字符
+* :first-line
+    >表示文字的第一行
+* :before
+    >选中元素的innerHTML的最前边  
+    一般该伪类都会结合content一起使用，通过content可以向指定位置添加内容
+* :after
+    >选中元素的innerHTML的最后边  
+    一般该伪类都会结合content一起使用，通过content可以向指定位置添加内容
