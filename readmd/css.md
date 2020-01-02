@@ -442,6 +442,10 @@ div {
     ```
 
 ## 背景
+```text
+当背景图比框大，即溢出框时，溢出部分不会显示，也不会占用空间，
+当框比背景图小时，默认框左上角点与背景左上角点是重合的
+```
 * background-color
     >背景颜色
 * background-image
@@ -493,6 +497,9 @@ div {
         y轴偏移量，用来指定图片的垂直位置
             正值，图片向下移动
             负值，图片向上移动
+        
+        利用位置偏移控制，可以将多个logo图片放到一张图片，
+        然后不同的logo框共用这张图片作背景，移动背景图以显示不同的logo图
         ```
     
     
@@ -513,6 +520,11 @@ div {
     没有数量的要求，不写的属性使用默认值
     如：
     background: #bfa url(img/3.png) center center no-repeat fixed;
+
+    logo图示例：
+    .login-div3 .pwd{
+        background: url("../img/pwd-icons-new.png") no-repeat -48px 0;
+    }
     ```
 * opacity
     ```text
