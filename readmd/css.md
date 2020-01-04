@@ -151,6 +151,25 @@ color: red;
 font-size: 20px;
 ```
 
+#### css声明块特殊说明
+* 样式名前加*  
+    表示只针对IE浏览器生效
+    ```css
+    .clearfix {
+        *zoom: 1;
+    }
+    ```
+* 样式名前加_  
+    表示只针对IE 6浏览器生效
+    ```css
+    .sc .txt{
+    	/*设置上外边距*/
+    	margin-top: 15px;
+    	/*为IE 6设置上外边距*/
+    	_margin-top: 18px;
+    	margin-bottom: 0px;
+    }
+    ```
 ## 元素之间的关系
 * 父元素  
     直接包含当前元素的的元素叫做父元素
