@@ -500,7 +500,7 @@ div {
         当背景图比框大，即溢出框时，溢出部分不会显示，也不会占用空间，
         这种情况下，默认框左上角点与背景左上角点是重合的
   
-        利用此特性，可以将多个logo图片放到一张图片，
+        利用此特性，制作雪碧图（CSS sprite），可以将多个logo图片放到一张图片，
         然后不同的logo框共用这张图片作背景，向左移和向上移将背景中要显示的logo移动框中显示
         ```
     
@@ -523,11 +523,12 @@ div {
     如：
     background: #bfa url(img/3.png) center center no-repeat fixed;
 
-    logo图示例：
+    雪碧图，logo图示例：
     .login-div3 .pwd{
-        background: url("../img/pwd-icons-new.png") no-repeat -48px 0;
+        background: url("../img/pwd-icons-new.png") no-repeat -48px -10px;
     }
     ```
+    [雪碧图](../source_07/day07/10.雪碧图.html)  
 * opacity
     ```text
     设置背景的不透明度
