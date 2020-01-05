@@ -212,7 +212,7 @@ font-size: 20px;
 * :after
     >选中元素的innerHTML的最后边  
     一般该伪类都会结合content一起使用，通过content可以向指定位置添加内容
-### 子元素的伪类
+### 子元素的伪类选择器
 * :first-child
 * :last-child
 * :nth-child(n|even|odd|formula)
@@ -235,7 +235,7 @@ font-size: 20px;
 * :last-of-type
 * :nth-of-type(n|even|odd|formula)，参数同nth-child
  
-### 否定伪类
+### 否定伪类选择器
 * :not(选择器)
     >如：.abc:not(div) {}
 

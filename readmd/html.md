@@ -235,6 +235,84 @@ HTML是采用纯文本的形式的编写，采用HTML标签来标识出页面中
     height
 ```
 
+## table表标签
+table是块元素
+
+* 子标签
+```html
+<tr></tr>  一行，可写多行
+<td></td>  一列，一个单元格
+<th></th>  表头中的一列，它的用法和td一样，不同的是它会有一些默认效果（加粗）
+
+<thead></thead>  表头，有默认样式，永远会显示在表格的头部
+<tbody></tbody>  表体，永远都会显示表格的中间
+<tfoot></tfoot>  表底部，永远都会显示表格的底部
+以上三个标签都可以省略不写
+
+如果表格中没有写tbody，浏览器会自动在表格中添加tbody
+并且将所有的tr都放到tbody中，所以注意tr并不是table的子元素，而是tbody的子元素
+通过table > tr 无法选中行 需要通过tbody > tr
+
+
+```
+* 属性
+    ```text
+    border  边框
+    border-spacing  table和td边框之间默认有一个距离
+    border-collapse: collapse;  设置表格的边框合并，border宽度为0，如果设置了边框合并，则border-spacing自动失效
+    rowspan="n"  由此单元格纵向向下合并n个单元格
+    colspan="n"  由此单元格横向向右合并n个单元格
+    ```
+    示例：
+    ```css
+    div table {
+        width: 300px;
+        margin: 0 auto;
+        border-collapse: collapse; /* 合并表格边距 */
+    }
+    
+    td, th {
+        border: 1px solid black;
+    }
+    ```
+
+```html
+<table>
+    <thead>
+        <tr>
+            <th>日期</th>
+            <th>收入</th>
+            <th>支出</th>
+            <th>合计</th>
+        </tr>    
+    </thead>
+    
+    <tfoot>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>合计</td>
+            <td>100</td>
+        </tr>
+    </tfoot>  
+      
+    <tbody>
+        <tr>
+            <td>10.24</td>
+            <td>500</td>
+            <td>300</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>10.25</td>
+            <td>600</td>
+            <td>200</td>
+            <td>400</td>
+        </tr>
+    </tbody>
+</table>
+```
+
 ## 实体(转义字符)
 ```text
 语法：
