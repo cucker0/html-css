@@ -260,6 +260,7 @@ table是块元素
     border  边框
     border-spacing  table和td边框之间默认有一个距离
     border-collapse: collapse;  设置表格的边框合并，border宽度为0，如果设置了边框合并，则border-spacing自动失效
+    border-spacing: 长度;  相邻单元格的边框间的距离，仅border-collapse: separate; "边框分离"模式时生效
     rowspan="n"  由此单元格纵向向下合并n个单元格
     colspan="n"  由此单元格横向向右合并n个单元格
     ```
