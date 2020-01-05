@@ -314,6 +314,149 @@ table是块元素
 </table>
 ```
 
+## form表单
+form>标签用于为用户输入创建 HTML 表单
+
+```html
+<form action="发送表单数据的URL" method="get" enctype="multipart/form-data">
+
+</form>
+```
+* fieldset表单项分组
+    ```text
+    可以将表单项中的同一类放到一个fieldset中，组成一组
+    在fieldset标签内，使用legend子标签，来指定组名
+    ```
+    [表单示例](../source_08/day08/06.表单.html)  
+    ![](../images/form表单.png)  
+
+* 属性
+    * action
+        >当提交表单时，向何处发送表单数据
+    * method
+        ```text
+        发送 form-data 的 HTTP 方法:
+            get
+            post
+        ```
+    * enctype
+        ```text
+        表单数据数据编码方式
+        可选值：
+            application/x-www-form-urlencoded
+            multipart/form-data  可发送文件
+            text/plain
+        ```
+    * target
+        ```text
+        在何处打开 action URL
+        可选值：
+            _self  默认值
+            _blank  新窗口
+            _parent  父窗口
+            _top
+            framename
+        ```
+## input与textarea标签
+```text
+input、textarea标签用于搜集用户信息
+```
+```html
+<input type="类型" name="field_name" value="值" checked="checked">
+```
+
+* **label包裹input点击文字可选中输入框或按钮**  
+    ```html
+    <!-- 点击 用户，光标就会聚集到输入框中 -->
+    <label>用户<input>
+    </label>
+    ```
+    也可以给<input>标签定义一个id，label用for="id值" 关联起来  
+    ```html
+    <label for="pwd">密码</label>
+    <input id="pwd" type="password" name="password" />
+    ```
+
+* 属性
+    * type
+    * name
+    * value
+        >input 元素的值
+    * checked
+        >input 元素首次加载时应当被选中，值checked，js中则为true/false
+    * readonly
+        >规定输入字段为只读
+    * required
+        >指示输入字段的值是必需的
+    * size
+        >定义输入字段的宽度
+    * type
+    ```text
+    元素类型
+    
+    可选值：
+        text  单行文本域
+        radio  单选按钮，通过name属性进行分组，name属性相同是一组按钮
+        checkbox  复选框，通过name属性进行分组，name属性相同是一组复选框
+        password  密码域
+        file  文件
+        reset  重置按钮，value为按钮显示的文本
+        submit  提交按钮，value为按钮显示的文本
+        button  按钮，value为按钮显示的文本
+        image
+        hidden
+    ```
+
+* textarea多行文本域
+    ```html
+    <textarea rows="10" cols="30"></textarea>
+    ```
+    rows  文本框的行数，内容超过后，会出现滚动条  
+    cols  每行的字数
+
+## select下拉列表
+```text
+下拉列表的name属性需要指定给select，而value属性需要指定给option
+可以通过在option中添加selected="selected"来将选项设置为默认选中
+
+当为select添加一个 multiple="multiple"，则下拉列表变为一个可多选的下拉列表
+```
+* 子标签
+    * optgroup
+        >选项组，label属性指定组名
+    * option
+        >单个选项，可添加多个
+
+* 属性
+    * name
+    * size
+        >下拉列表中可见选项的数目
+    * selected="selected"
+        >表示首次加载时应当被选中
+
+
+select示例
+```html
+<select name="star">
+    <!-- 
+        在select中可以使用optgroup对选项进行分组
+            同一个optgroup中的选项是一组
+        可以通过label属性来指定分组的名字	
+    -->
+    <optgroup label="女明星">
+        <option value="fbb">范冰冰</option>
+        <option value="lxr">林心如</option>
+        <option value="zw">赵薇</option>
+    </optgroup>
+    
+    <optgroup label="男明星">
+        <option value="zbs" selected="selected">赵本山</option>
+        <option value="ldh">刘德华</option>
+        <option value="pcj">潘长江</option>
+    </optgroup>
+</select>
+```
+
 ## 实体(转义字符)
 ```text
 语法：
