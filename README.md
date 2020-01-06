@@ -86,3 +86,4 @@ html-css
     * [清除默认样式](source_10/polo-360/css/reset.css)
     * [IE6处理png问题](source_10/polo-360/js/DD_belatedPNG_0.0.8a-min.js)
     * [多个inline-block文本水平方向居中处理](readmd/css.md#多个inline-block文本水平方向居中处理)
+    * [cursor光标样式](readmd/css.md#cursor光标样式)
