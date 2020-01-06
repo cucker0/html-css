@@ -19,6 +19,7 @@ html-css
 * [实体(转义字符)](readmd/html.md#实体转义字符)
 * [相对路径](readmd/html.md#相对路径)
 * [xHTML语法规范](readmd/html.md#xHTML语法规范)
+* [IE版本判断](readmd/html.md#IE版本判断)
 
 ***
 
