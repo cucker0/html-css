@@ -484,5 +484,53 @@ select示例
 * 属性必须有值，且值必须加引号，单引号双引号都可以
 
 
+## 其他
+### IE版本判断
+对于特定版本的IE修复问题特别好用
+```html
+<!--[if IE]>
+所有的IE
+<![endif]-->
 
+<!--[if !IE]>
+除IE外
+<![endif]-->
+
+<!--[if IE 6]>
+仅IE6
+<![endif]-->
+
+<!--[if lte IE 8]>
+IE 8及以下版本
+<![endif]-->
+
+<!--[if lt IE 8]>
+小于 IE8
+<![endif]-->
+
+<!--[if lte IE 8]>
+小于等于 IE8
+<![endif]-->
+
+<!--[if gt IE 8]>
+大于 IE8
+<![endif]-->
+
+<!--[if gte IE 8]>
+大于等于 IE8
+<![endif]-->
+
+<!--[if (IE 8)|(IE 9)]>
+IE8或IE9
+<![endif]-->
+
+```
+
+示例：
+```html
+<!--[if IE 6]>
+    <script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+    <script type="text/javascript">DD_belatedPNG.fix("div,img,a,h1");</script>
+<![endif]-->
+``` 
 
