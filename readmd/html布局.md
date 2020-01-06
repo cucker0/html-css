@@ -66,8 +66,8 @@ float设置元素浮动
     ```css
     .clearfix:before, 
     .clearfix:after {
-    	content: "";
     	display: table;
+    	content: "";
     	clear: both;
     }
     

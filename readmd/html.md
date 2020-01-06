@@ -417,9 +417,6 @@ input、textarea标签用于搜集用户信息
 ## select下拉列表
 ```text
 下拉列表的name属性需要指定给select，而value属性需要指定给option
-可以通过在option中添加selected="selected"来将选项设置为默认选中
-
-当为select添加一个 multiple="multiple"，则下拉列表变为一个可多选的下拉列表
 ```
 * 子标签
     * optgroup
@@ -433,7 +430,8 @@ input、textarea标签用于搜集用户信息
         >下拉列表中可见选项的数目
     * selected="selected"
         >表示首次加载时应当被选中
-
+    * multiple="multiple"
+        >多选的下拉列表，默认单选
 
 select示例
 ```html

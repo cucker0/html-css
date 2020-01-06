@@ -329,9 +329,9 @@ block块元素会独占页面中的一行，无论有多少内容
 * %
     >百分比，如20%
 * em
-    >相对于当前对象内文本的font-size值的倍数，即1em相当于一个字的大小
+    >相对于当前对象内文本的font-size值的倍数，即1em相当于一个字的大小，em是element缩写
 * rem
-    >相对于根元素`<html>`的font-size的倍数
+    >相对于根元素`<html>`的font-size值的倍数，rem是 root element缩写
 
 ### 颜色单位
 * 颜色单词
@@ -597,3 +597,19 @@ block块元素会独占页面中的一行，无论有多少内容
 
 ## 其他
 ### [清除默认样式](../source_10/polo-360/css/reset.css)
+### 多个inline-block文本水平方向居中处理
+```text
+两个inline-block 文本默认不能居中，
+因为默认的垂直对齐方式为vertical-align: baseline; 这种对齐方式下，元素以基线为基准线对齐
+解决方案：vertical-align: middle; 这种对齐方式下，元素以中线为基准线对齐
+```
+```css
+.note span {
+	margin: 0 4px;
+	display: inline-block;
+	line-height: 25px;
+	color: #999;
+	margin: 0 8px 0;
+	vertical-align: middle;
+}
+```

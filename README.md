@@ -83,3 +83,5 @@ html-css
 * [背景](readmd/css.md#背景)
 * 其他
     * [清除默认样式](source_10/polo-360/css/reset.css)
+    * [IE图片透明失效修复](source_10/polo-360/js/DD_belatedPNG_0.0.8a-min.js)
+    * [多个inline-block文本水平方向居中处理](readmd/css.md#多个inline-block文本水平方向居中处理)
