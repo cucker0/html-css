@@ -505,7 +505,7 @@ block块元素会独占页面中的一行，无论有多少内容
     ```
 * background-position
     ```text
-    设置背景图片的位置
+    设置背景图片的位置，相对于背景图片所在元素来说的，移动的是背景图片
     background-position: 水平x轴 垂直y轴;
     ```
     
