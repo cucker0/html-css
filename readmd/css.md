@@ -38,11 +38,36 @@ CSS负责结构、表现、行为中的表现
 
 ### 引入外部css资源
 可以在不同的页面中使用同一个css文件，完全将表现和结构分离，方便后期的维护，推荐使用的方式
-
+* 链接式
+    ```html
+    <head>
+        <link rel="stylesheet" type="text/css" href="css文件的相对路径 或 URL(如//bar.tmall.com/index.css)"/>
+    </head>
+    ```
+* 导入式
 ```html
 <head>
-    <link rel="stylesheet" type="text/css" href="css文件的相对路径 或 URL(如//bar.tmall.com/index.css)"/>
+    <style type="text/css">
+        @import "./css/style.css"; 
+        /* 或
+        @import url("//g.alicdn.com/index.css");
+         */
+    </style>
 </head>
+```
+* 两者区别
+```text
+区别：使用链接式时，会在装载页面主体部分 之前装载css文件，这样现实出来的页面从一开始就是带有样式效果的，
+而使用导入式时，会在整个页面装载完成之后再装载css文件。
+```
+
+### css文件中引入其他css资源
+```css
+/* 导入另一个CSS文件 */
+@import "./css/style.css"; 
+/* 或
+@import url("//g.alicdn.com/index.css");
+ */
 ```
 
 ## 基本语法
