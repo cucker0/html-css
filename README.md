@@ -16,6 +16,7 @@ html-css
 * [form表单](readmd/html.md#form表单)
 * [input与textarea标签](readmd/html.md#input与textarea标签)
 * [select下拉列表](readmd/html.md#select下拉列表)
+* [base标签](readmd/html.md#base标签)
 * [实体(转义字符)](readmd/html.md#实体转义字符)
 * [相对路径](readmd/html.md#相对路径)
 * [xHTML语法规范](readmd/html.md#xHTML语法规范)

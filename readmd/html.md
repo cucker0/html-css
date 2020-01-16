@@ -455,6 +455,28 @@ select示例
 </select>
 ```
 
+## base标签
+```text
+为页面上的所有链接规定默认地址或默认目标，写在<head>块内，是自结束标签
+```
+* 属性
+    * href
+        ```text
+        规定页面中所有相对链接的基准 URL。值为URL。
+        受影响包括 <a>、<img>、<link>、<form> 标签中的 URL
+        默认浏览器随后使用当前文档的 URL作为基准的URL。相当于定义/根URL
+        ```
+    * target
+        ```text
+        可选，在何处打开页面中所有的链接。
+        值：
+        _blank
+        _parent
+        _self
+        _top
+        framename
+        ```
+
 ## 实体(转义字符)
 ```text
 语法：
