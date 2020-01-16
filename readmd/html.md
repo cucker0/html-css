@@ -476,6 +476,13 @@ select示例
         _top
         framename
         ```
+示例
+```html
+<head>
+    <base href="http://127.0.0.1:8080/tomcat/">
+</head>
+```
+
 
 ## 实体(转义字符)
 ```text
