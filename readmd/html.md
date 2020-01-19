@@ -457,10 +457,11 @@ select示例
 
 ## base标签
 ```text
-为页面上的所有链接规定基准URL或默认目标，写在<head>块内，是自结束标签
-基准URL：/对应的绝对路径
+为页面上的所有链接的/根路径指定URL或默认目标，写在<head>块内，是自结束标签
 
-在没有没有定义base标签的href是，默认的/路径为 http://ip:port/
+在没有没有定义base标签的href是，默认相对路径的基准URL是 http://ip:port/
+
+修改base标签的href的URL就是修改/根的路径
 ```
 * 属性
     * href
@@ -486,6 +487,7 @@ select示例
 </head>
 ```
 
+[base标签](../source_05/day05/base标签.html)  
 
 ## 实体(转义字符)
 ```text
