@@ -21,6 +21,7 @@ html-css
 * [相对路径](readmd/html.md#相对路径)
 * [xHTML语法规范](readmd/html.md#xHTML语法规范)
 * [IE版本判断](readmd/html.md#IE版本判断)
+* [使用iframe代理一个网站](../source_08/day08/iframe全屏.html)
 
 ***
 
@@ -49,6 +50,7 @@ html-css
     * [fixed固定定位](readmd/html布局.md#fixed固定定位)
     * [层级](readmd/html布局.md#层级)
     * [偏移量](readmd/html布局.md#偏移量)
+    * **[position定位使用总结](readmd/html布局.md#position定位使用总结)**
 
 ***
 
