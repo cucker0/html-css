@@ -32,7 +32,7 @@ html-css
     * [边框border](readmd/盒子模型.md#边框border)
     * [外边距margin](readmd/盒子模型.md#外边距margin)
 * [内联元素的盒子模型规则](readmd/盒子模型.md#内联元素的盒子模型规则)
-* [盒模型相关的样式](readmd/盒子模型.md#盒模型相关的样式)
+* [盒模型相关的样式：display、visibility、overflow](readmd/盒子模型.md#盒模型相关的样式displayvisibilityoverflow)
 * [文档流](readmd/盒子模型.md#文档流)
 
 ***
