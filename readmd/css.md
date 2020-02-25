@@ -622,6 +622,13 @@ block块元素会独占页面中的一行，无论有多少内容
 
 ## 其他
 ### [清除默认样式](../source_10/polo-360/css/reset.css)
+### 清除a标签默认样式
+```css
+a, a:link, a:visited, a:hover, a:active{
+    text-decoration: none;
+    color:inherit;
+}
+```
 ### 多个inline-block文本水平方向居中处理
 ```text
 两个inline-block 文本默认不能居中，
