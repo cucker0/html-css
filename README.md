@@ -51,7 +51,7 @@ html-css
     * [层级](readmd/html布局.md#层级)
     * [偏移量](readmd/html布局.md#偏移量)
     * **[position定位使用总结](readmd/html布局.md#position定位使用总结)**
-
+* [inline-block布局 vs 浮动布局](readmd/inline-block布局vs浮动布局.md)
 ***
 
 #### CSS
