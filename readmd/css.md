@@ -593,7 +593,7 @@ block块元素会独占页面中的一行，无论有多少内容
         background: url("../img/pwd-icons-new.png") no-repeat -48px -10px;
     }
     ```
-    [雪碧图](../source_07/day07/10.雪碧图.html)  
+    [sprite雪碧图](../source_07/day07/10.雪碧图.html)  
 * opacity
     ```text
     设置背景的不透明度
