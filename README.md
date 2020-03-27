@@ -89,5 +89,6 @@ html-css
     * [清除默认样式](source_10/polo-360/css/reset.css)
     * [清除a标签默认样式](readmd/css.md#清除a标签默认样式)
     * [IE6处理png问题](source_10/polo-360/js/DD_belatedPNG_0.0.8a-min.js)
-    * [多个inline-block文本水平方向居中处理](readmd/css.md#多个inline-block文本水平方向居中对齐处理)
+    * [多个inline-block元素垂直方向居中](readmd/css.md#多个inline-block元素垂直方向居中)
     * [cursor光标样式](readmd/css.md#cursor光标样式)
+    * [vertical-align属性](readmd/css.md#vertical-align属性)
