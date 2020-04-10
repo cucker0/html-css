@@ -675,7 +675,8 @@ a, a:link, a:visited, a:hover, a:active{
 
 ### vertical-align属性
 ```text
-vertical-align 属性设置元素的垂直对齐方式。尤其对display:inline-block; 标签好用
+vertical-align 属性设置元素的垂直方向对齐方式。尤其对display:inline-block; 标签好用
+在当前元素中设置
 
 该属性定义行内元素的基线相对于该元素所在行的基线的垂直对齐。
 允许指定负长度值和百分比值。
