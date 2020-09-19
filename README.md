@@ -23,7 +23,7 @@ html-css
 * [IE版本判断](readmd/html.md#IE版本判断)
 * [使用iframe代理一个网站](../source_08/day08/iframe全屏.html)
 * 可跨站标签（可以引用站点之外的资源）
-   * <\img>标签的src属性
+   * \<img>标签的src属性
    * \<script>标签的src属性
    * \<link>标签的href属性
    * css中的@import + 空格 + url(css文件路径地址);
