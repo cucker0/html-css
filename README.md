@@ -27,7 +27,7 @@ html-css
    * \<script>标签的src属性
    * \<link>标签的href属性
    * css中的@import + 空格 + url(css文件路径地址);
-   * 多媒体<embed>标签的src属性
+   * 多媒体\<embed>标签的src属性
 
 ***
 
