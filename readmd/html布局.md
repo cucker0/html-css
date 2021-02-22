@@ -195,11 +195,14 @@ position: fixed;
 
 ## 其他
 ### 如何使一个空的div占用空间
-解决思路：给div设置最小高度（height）、溢出（overflow）属性
+解决思路：给div设置高度（height）、溢出（overflow）属性
 
 * style标签属性
     ```html
     <div style="width:100%; min-height:1px; overflow:hidden"></div>
+    
+    <!-- 或 -->
+    <div style="width:100%; height:0; overflow:hidden; "></div>
     ```
 
 * css样式
