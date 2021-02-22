@@ -192,3 +192,20 @@ position: fixed;
 一般给父元素，开启相对定位，不设置偏移量，
 给子元素，开启绝对定位，设置相应的偏移量，各子元素分别指定层级
 ```
+
+## 其他
+### 如何使一个空的div占用空间
+解决思路：给div设置最小高度（height）、溢出（overflow）属性
+
+* style标签属性
+    ```html
+    <div style="width:100%; min-height:1px; overflow:hidden"></div>
+    ```
+
+* css样式
+    ```css
+    .empty-takes-space {
+        min-height: 1px;
+        overflow: hidden;
+    }
+    ```
