@@ -522,6 +522,57 @@ block块元素会独占页面中的一行，无论有多少内容
     
     background-image: url(图片的路径);
     ```
+* background-size
+    ```text
+    设置背景图片的大小
+  
+    background-size: width height |width-percent height-percent |cover |contain;
+    ```
+   
+    值 |描述 
+    :--- |:--- 
+    width height |背景图片的宽、高，<br>如果只给出其中一个，则另外一个为auto，即按比较缩放 
+    width-percent height-percent |将计算相对于背景定位区域的宽、高百分比。 <br>如果只给出其中一个，则另外一个为auto，即按比较缩放 
+    cover |按原图宽高比例缩放图片，将完全覆盖背景定位区域，图片溢出部分将不显示。
+    contain |按原图宽高比例缩放图片，适应背景定位区域的大小，直到背景图片的宽或高与背景定位区域宽或高有一个相等时停止缩放。 
+    
+    * 示例
+        ```css
+        /* 示例0 */  
+        .headbox0 {
+            background: url(/img/img_flwr.gif);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        /* 示例1 */  
+        .headbox1 {
+            background: url(/img/img_flwr.gif);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    
+        /* 示例2 */
+        .headbox2 {
+            background: url(/img/img_flwr.gif);
+            background-size: 100px 50px;
+            background-repeat: no-repeat;
+        }
+        
+        /* 示例3 */
+        .headbox3 {
+            background: url(/img/img_flwr.gif);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        
+        /* 示例4 */
+        .headbox4 {
+            background: url(/img/img_flwr.gif);
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+        }     
+        ```
+
 * background-repeat
     ```text
     背景图片重复方式
@@ -550,9 +601,9 @@ block块元素会独占页面中的一行，无论有多少内容
         
         可通过两两组合位置方向，指定一个值，则第二个值默认是center
         如：background-position: center center;
-          
-        位置有 9 个方向：
         ```
+        **9个位置方向**
+        
         ![](../images/css/背景图位置9个方向.png) 
         
     * 方式二：水平、垂直方面偏移量

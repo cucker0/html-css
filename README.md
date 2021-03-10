@@ -34,7 +34,8 @@ html-css
 #### 盒子模式
 * [概述](readmd/盒子模型.md#概述)
 * [框的组成部分](readmd/盒子模型.md#框的组成部分)
-    * [元素内容区](readmd/盒子模型.md#元素内容区)
+    * [元素内容区(宽高)](readmd/盒子模型.md#元素内容区宽高)
+        * [max最大min最小宽、高](readmd/盒子模型.md#max最大min最小宽高)
     * [内边距padding](readmd/盒子模型.md#内边距padding)
     * [边框border](readmd/盒子模型.md#边框border)
     * [外边距margin](readmd/盒子模型.md#外边距margin)
