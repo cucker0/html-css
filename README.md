@@ -61,6 +61,7 @@ html-css
 * [inline-block布局 vs 浮动布局](readmd/inline-block布局vs浮动布局.md)
 * [其他](readmd/html布局.md#其他)
     * [如何使一个空的div占用空间](readmd/html布局.md#如何使一个空的div占用空间)
+    * [实现div里的img图片水平垂直居中](readmd/html布局.md#实现div里的img图片水平垂直居中)
 
 ***
 

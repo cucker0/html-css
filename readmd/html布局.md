@@ -212,3 +212,122 @@ position: fixed;
         overflow: hidden;
     }
     ```
+
+### 实现div里的img图片水平垂直居中
+html代码
+```html
+<body>
+    <div class="flowerbox">
+        <img src="/i/eg_tulip.jpg"  alt="上海鲜花港 - 郁金香" />
+    </div>
+</body>
+```
+
+* 方法1
+
+    将display设置成table-cell，然后水平居中设置text-align为center，垂直居中设置vertical-align为middle
+    ```css
+    .flowerbox {
+        width:150px;
+        height: 100px;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        border:1px solid #000;
+    }
+
+    .flowerbox img {
+        width: 50px;
+        height: 50px;
+    }
+    ```
+
+* 方法2
+    ```
+    通过position定位来实现。
+    将div设置成相对定位relative，将img设置成绝对定位absolute，left:50%，top:50%，
+    此时图片的左上角位于div的中心，
+    要使图片的中心位于div的中心，就需要将图片向上移动图片高度的一半，并向左移动图片宽度的一半。
+    ```
+    ```css
+    .flowerbox {
+        width:150px;
+        height: 100px;
+        position: relative;
+        border:1px solid #000;
+    }
+
+    .flowerbox img {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -25px; /* 高度的一半 */
+        margin-left: -25px; /* 宽度的一半 */
+    }
+    ```
+    
+* 方法3：在不清楚图片或元素的真实宽高情况下
+    ```
+    还是通过position定位来实现。
+    将div设置成相对定位relative，将img设置成绝对定位absolute，left:50%，top:50%，
+    此时图片的左上角位于div的中心，
+    要使图片的中心位于div的中心，就需要将图片向上移动图片高度的一半，并向左移动图片宽度的一半，
+    如果不知道元素的宽高，可以用 transform: translate(-50%, -50%);
+    ```
+    ```css
+    .flowerbox {
+        width:150px;
+        height: 100px;
+        position: relative;
+        border:1px solid #000;
+    }
+
+    .flowerbox img {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* 也可以值指定一个值 transform: translate(-50%) 来调整 */
+    }
+    ```
+
+
+* 方法4
+    ```css
+    .flowerbox {
+        width:150px;
+        height: 100px;
+        position: relative;
+        border:1px solid #000;
+    }
+
+    .flowerbox img {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    ```
+
+* flex弹性布局
+    ```css
+        .flowerbox{
+            width:150px;
+            height: 100px;
+            border:1px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .flowerbox img {
+            width: 50px;
+            height: 50px;
+        }
+    ```
