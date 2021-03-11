@@ -63,24 +63,25 @@ float设置元素浮动
         * .clearfix:before问题：子元素和父元素相邻的垂直外边距会发生重叠，子元素的外边距会传递给父元素
             空block标签不能解决， 空table可以解决，因为添加的table后带有一个换行符
     ```
-    优化版: 既解决高度塌陷，又确保父元素和子元素的垂直外边距不会重叠
-    ```css
-    .clearfix:before, 
-    .clearfix:after {
-    	display: table;
-    	content: "";
-    	clear: both;
-    }
     
-    /* 
+    * 优化版: 既解决高度塌陷，又确保父元素和子元素的垂直外边距不会重叠
+        ```css
+        .clearfix:before, 
+        .clearfix:after {
+            display: table;
+            content: "";
+            clear: both;
+        }
+        
+        /* 
         针对IE 6
         不支持before、after伪类，则开启hasLayout功能来解决
-    */
-    .clearfix {
-    	*zoom: 1; /* 缩放比例 */
-    }
-    ```
-    [优化版详解](../source_08/day08/05.完善clearfix.html)
+        */
+        .clearfix {
+            *zoom: 1; /* 缩放比例 */
+        }
+        ```
+    * [优化版详解示例](../source_08/day08/05.完善clearfix.html)
     
 * 高度塌陷问题的修复方法3
     ```text
