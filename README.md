@@ -59,9 +59,29 @@ html-css
     * [偏移量](readmd/html布局.md#偏移量)
     * **[position定位使用总结](readmd/html布局.md#position定位使用总结)**
 * [inline-block布局 vs 浮动布局](readmd/inline-block布局vs浮动布局.md)
+    * [布局总结](readmd/inline-block布局vs浮动布局.md#总结)
 * [其他](readmd/html布局.md#其他)
     * [如何使一个空的div占用空间](readmd/html布局.md#如何使一个空的div占用空间)
     * [实现div里的img图片水平垂直居中](readmd/html布局.md#实现div里的img图片水平垂直居中)
+
+***
+
+### flex弹性布局
+* [什么是flex弹性布局](readmd/flex弹性布局.md#什么是flex弹性布局)
+    * [怎么开启flex布局](readmd/flex弹性布局.md#怎么开启flex布局)
+* [一、基本概念](readmd/flex弹性布局.md#一基本概念)
+* [二、容器属性](readmd/flex弹性布局.md#二容器属性)
+    * [2.1 flex-direction](readmd/flex弹性布局.md#2.1-flex-direction)
+    * [2.2 flex-wrap](readmd/flex弹性布局.md#2.2-flex-wrap)
+    * [2.3 justify-content](readmd/flex弹性布局.md#2.3-justify-content)
+    * [2.4 align-items](readmd/flex弹性布局.md#2.4-align-items)
+    * [2.5 align-content](readmd/flex弹性布局.md#2.5-align-content)
+    * [flex-direction、justify-content、align-items结合](readmd/flex弹性布局.md#flex-directionjustify-contentalign-items结合)
+* [三、项目属性](readmd/flex弹性布局.md#三项目属性)
+    * [3.1 order属性](readmd/flex弹性布局.md#3.1-order属性)
+    * [3.2 flex-grow属性](readmd/flex弹性布局.md#3.2-flex-grow属性)
+    * [3.3 flex-shrink属性](readmd/flex弹性布局.md#3.3-flex-shrink属性)
+    * [3.4 align-self属性](readmd/flex弹性布局.md#3.4-align-self属性)
 
 ***
 
