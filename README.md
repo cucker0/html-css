@@ -50,7 +50,7 @@ html-css
     * [浮动元素的特点](readmd/html布局.md#浮动元素的特点)
         * [块元素浮动后特点](readmd/html布局.md#块元素浮动后特点)
         * [内联元素浮动后特点](readmd/html布局.md#内联元素浮动后特点)
-    * [浮动后其父元素高度塌陷问题的修复](readmd/html布局.md#浮动后其父元素高度塌陷问题的修复)
+    * [浮动后其父元素高度塌陷问题的修复 .clearfix](readmd/html布局.md#浮动后其父元素高度塌陷问题的修复)
 * [position定位](readmd/html布局.md#position定位)
     * [relative相对定位](readmd/html布局.md#relative相对定位)
     * [absolute绝对定位](readmd/html布局.md#absolute绝对定位)
