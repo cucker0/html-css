@@ -106,14 +106,14 @@ div {
     #id {}
 
     #box1 {}
-    ``` 
+    ```
 * 类选择器  
     根据元素的class属性值，选中一组元素
     ```css
     .class {}
     
     .box {}
-    ``` 
+    ```
 
 * 选中页面中的所有元素  
     性能比较差，尽量避免使用
@@ -212,11 +212,22 @@ font-size: 20px;
 ## 伪类和伪元素选择器
 伪类用来表示元素所处的一个特殊的状态，伪元素用来表示元素所在的位置
 
+伪元素所控制的内容和一个元素控制的内容一样，但是伪元素不存在于文档树中，不是真正的元素，所以叫伪元素 
+
+:符号是伪类，
+
+::符号是伪元素
+
+
+
 * :link
+    
     >表示一个普通的链接（未访问过的链接）
 * :visited
-    >表示访问过的链接
+    
+    >表示访问过的链接，与link互斥
 * :hover
+    
     >鼠标移入的链接，也可以为其他元素设置hover
 * :active
     >正在被点击的链接，也可以为其他元素设置active
@@ -224,17 +235,21 @@ font-size: 20px;
     **[a的伪类示例](../source_03/day03/10.a的伪类.html)**
     
 * :focus
+    
     >表示元素获取焦点的状态，一般用于文本框
 * ::selection
+    
     >表示内容被选中的状态，在火狐中使用::-moz-selection来代替
-* :first-letter
+* :first-letter、::first-letter
+    
     >表示第一个字符
-* :first-line
+* :first-line、::first-line
+    
     >表示文字的第一行
-* :before
+* :before、::before
     >选中元素的innerHTML的最前边  
     一般该伪类都会结合content一起使用，通过content可以向指定位置添加内容
-* :after
+* :after、::after
     >选中元素的innerHTML的最后边  
     一般该伪类都会结合content一起使用，通过content可以向指定位置添加内容
 ### 子元素的伪类选择器
@@ -259,9 +274,10 @@ font-size: 20px;
 * :first-of-type
 * :last-of-type
 * :nth-of-type(n|even|odd|formula)，参数同nth-child
- 
+
 ### 否定伪类选择器
 * :not(选择器)
+    
     >如：.abc:not(div) {}
 
 ## 选择器的优先级
@@ -356,14 +372,18 @@ block块元素会独占页面中的一行，无论有多少内容
     >像素，一个像素指的就是一个像素点，不同的显示器中，一个像素的大小是不同的，越清晰的屏幕像素越小  
     "绝对大小"
 * %
+    
     >百分比，如20%
 * em
+    
     >相对于当前对象内文本的font-size值的倍数，即1em相当于一个字的大小，em是element缩写
 * rem
+    
     >相对于根元素`<html>`的font-size值的倍数，rem是 root element缩写
 
 ### 颜色单位
 * 颜色单词
+    
     >red green blue orange
 * RGB值  
     语法
@@ -410,8 +430,8 @@ block块元素会独占页面中的一行，无论有多少内容
     	normal，默认值，文字正常显示
     	italic 文字会以斜体显示(推荐)
     	oblique 文字会以倾斜的效果显示
-  	大部分浏览器italic、oblique的效果相同
-    ```
+    	大部分浏览器italic、oblique的效果相同
+   ```
 * font-weight
     ```text
     文本加粗
@@ -482,7 +502,7 @@ block块元素会独占页面中的一行，无论有多少内容
     	underline  为文本添加下划线
     	overline  为文本添加上划线
     	line-through  为文本添加删除线
-  	
+    	
 	超链接会默认添加下划线，也就是超链接的text-decoration的默认值是underline
     如果需要去除超链接的下划线则需要将该样式设置为none
     ```
@@ -515,6 +535,7 @@ block块元素会独占页面中的一行，无论有多少内容
 一个元素的背景可以是纯颜色，也可以是图片
 ```
 * background-color
+    
     >背景颜色
 * background-image
     ```text
@@ -525,7 +546,7 @@ block块元素会独占页面中的一行，无论有多少内容
 * background-size
     ```text
     设置背景图片的大小
-  
+    
     background-size: width height |width-percent height-percent |cover |contain;
     ```
    
@@ -619,11 +640,10 @@ block块元素会独占页面中的一行，无论有多少内容
         
         当背景图比框大，即溢出框时，溢出部分不会显示，也不会占用空间，
         这种情况下，默认框左上角点与背景左上角点是重合的
-  
+      
         利用此特性，制作雪碧图（CSS sprite），可以将多个logo图片放到一张图片，
         然后不同的logo框共用这张图片作背景，向左移和向上移将背景中要显示的logo移动框中显示
         ```
-    
     
 * background-attachment
     ```text

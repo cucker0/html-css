@@ -96,7 +96,7 @@ html-css
 * [常用选择器](readmd/css.md#常用选择器)
     * [css声明块](readmd/css.md#css声明块)
         * [css声明块特殊说明](readmd/css.md#css声明块特殊说明)
-* [伪类和伪元素选择器](readmd/css.md#伪类和伪元素选择器)
+* [伪类、伪元素选择器](readmd/css.md#伪类和伪元素选择器)
     * [子元素的伪类选择器](readmd/css.md#子元素的伪类选择器)
     * [否定伪类选择器](readmd/css.md#否定伪类选择器)
 * [选择器的优先级](readmd/css.md#选择器的优先级)
