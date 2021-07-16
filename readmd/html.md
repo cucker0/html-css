@@ -103,7 +103,7 @@ HTML是采用纯文本的形式的编写，采用HTML标签来标识出页面中
             这样当点击超链接时，页面将会在相应的内联框架中打开
             ```
               
-    **[使用iframe代理一个网站](../source_08/day08/iframe全屏.html)**  
+    **[使用iframe代理一个网站](../source_08/day08/iframe%E5%85%A8%E5%B1%8F.html)**  
 
 * frameset框架集
     ```text
