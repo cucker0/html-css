@@ -373,6 +373,8 @@ table是块元素
     </body>
     </html>
     ```
+    效果
+    ![](../images/table20210922.png)
 
 ## form表单
 form>标签用于为用户输入创建 HTML 表单
