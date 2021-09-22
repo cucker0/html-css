@@ -317,6 +317,63 @@ table是块元素
 </table>
 ```
 
+### 第一行colspan合并单元格后，设置td宽度失效的解决方法
+为防止td被连串字符撑开，表格一般会定义一个table-layout: fixed;
+
+如果首行有合并单元格的话 td定义宽度就会失效。
+
+解决方法：<colgroup>定义列宽度
+
+* 示例
+    ```html
+    <html>
+    <head>
+    <style>
+    table {
+        width: 500px;
+        margin: 0 auto;
+        border-collapse: collapse; /* 合并表格边距 */
+    }
+    
+    td, th {
+        border: 1px solid black;
+    }
+    </style>
+    </head>
+    
+    <body>
+        <table>
+            <colgroup>
+                <col style="width: 85px">
+                <col style="width: 90px">
+                <col style="width: auto">
+                <col style="width: 80px">
+            </colgroup>
+            
+            <tr>
+                <td>入会时间</td>
+                <td colspan="3">2021年9月22日</td>
+            </tr>
+            <tr>
+                <td colspan="4" style="height: 70px;"></td>
+            </tr>
+            <tr>
+                <td>年度</td>
+                <td>缴费金额</td>
+                <td>有效期</td>
+                <td>缴费情况</td>
+            </tr>
+            <tr>
+                <td>2021年</td>
+                <td>50000元</td>
+                <td>2021.01.01-2021.12.31</td>
+                <td>已缴费</td>
+            </tr>
+        </table>
+    </body>
+    </html>
+    ```
+
 ## form表单
 form>标签用于为用户输入创建 HTML 表单
 
