@@ -373,7 +373,7 @@ table是块元素
     </body>
     </html>
     ```
-    效果
+    效果  
     ![](../images/table20210922.png)
 
 ## form表单
