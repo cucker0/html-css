@@ -114,6 +114,32 @@ float设置元素浮动
             * 当为元素设置宽度非默认值时，会自动开启hasLayout
         ```
 
+* mixin工具--Clearfix清除浮动
+    
+    实用工具 mixin 用于与不相关的 CSS 结合以达到特定目的或任务。mixin工具基于bootstrap。
+    
+    建议为需要清除浮动的元素使用 .clearfix() mixin ，尽量不要直接添加 class="clearfix" 类。
+    
+    这是来自 [Nicolas Gallagher](https://twitter.com/necolas) 的 [micro clearfix](http://nicolasgallagher.com/micro-clearfix-hack/) 代码:
+    ```css
+    // Mixin
+    .clearfix() {
+      &:before,
+      &:after {
+        content: " ";
+        display: table;
+      }
+      &:after {
+        clear: both;
+      }
+    }
+    
+    // Usage
+    .container {
+      .clearfix();
+    }
+    ```
+
 ## position定位
 position设置元素位置，可以将页面中的元素摆放到页面的任意位置
 
