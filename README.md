@@ -22,7 +22,7 @@ html-css
 * [相对路径](readmd/html.md#相对路径)
 * [xHTML语法规范](readmd/html.md#xHTML语法规范)
 * [IE版本判断](readmd/html.md#IE版本判断)
-* [使用iframe代理一个网站](../source_08/day08/iframe全屏.html)
+* [使用iframe代理一个网站](source_08/day08/iframe全屏.html)
 * 可跨站标签（可以引用站点之外的资源）
     * \<img>标签的src属性
     * \<script>标签的src属性
