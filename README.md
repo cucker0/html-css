@@ -24,11 +24,11 @@ html-css
 * [IE版本判断](readmd/html.md#IE版本判断)
 * [使用iframe代理一个网站](../source_08/day08/iframe全屏.html)
 * 可跨站标签（可以引用站点之外的资源）
-   * \<img>标签的src属性
-   * \<script>标签的src属性
-   * \<link>标签的href属性
-   * css中的@import + 空格 + url(css文件路径地址);
-   * 多媒体\<embed>标签的src属性
+    * \<img>标签的src属性
+    * \<script>标签的src属性
+    * \<link>标签的href属性
+    * css中的@import + 空格 + url(css文件路径地址);
+    * 多媒体\<embed>标签的src属性
 
 ***
 
@@ -36,7 +36,7 @@ html-css
 * [概述](readmd/盒子模型.md#概述)
 * [框的组成部分](readmd/盒子模型.md#框的组成部分)
     * [元素内容区(宽高)](readmd/盒子模型.md#元素内容区宽高)
-        * [max最大min最小宽、高](readmd/盒子模型.md#max最大min最小宽高)
+        * [max最大 min最小宽、高](readmd/盒子模型.md#max最大min最小宽高)
     * [内边距padding](readmd/盒子模型.md#内边距padding)
     * [边框border](readmd/盒子模型.md#边框border)
     * [外边距margin](readmd/盒子模型.md#外边距margin)
@@ -70,15 +70,15 @@ html-css
 ### flex弹性布局
 * [什么是flex弹性布局](readmd/flex弹性布局.md#什么是flex弹性布局)
     * [怎么开启flex布局](readmd/flex弹性布局.md#怎么开启flex布局)
-* [一、基本概念](readmd/flex弹性布局.md#一基本概念)
-* [二、容器属性](readmd/flex弹性布局.md#二容器属性)
+* [基本概念](readmd/flex弹性布局.md#一基本概念)
+* [容器属性](readmd/flex弹性布局.md#二容器属性)
     * [2.1 flex-direction](readmd/flex弹性布局.md#2.1-flex-direction)
     * [2.2 flex-wrap](readmd/flex弹性布局.md#2.2-flex-wrap)
     * [2.3 justify-content](readmd/flex弹性布局.md#2.3-justify-content)
     * [2.4 align-items](readmd/flex弹性布局.md#2.4-align-items)
     * [2.5 align-content](readmd/flex弹性布局.md#2.5-align-content)
     * [flex-direction、justify-content、align-items结合](readmd/flex弹性布局.md#flex-directionjustify-contentalign-items结合)
-* [三、项目属性](readmd/flex弹性布局.md#三项目属性)
+* [项目属性](readmd/flex弹性布局.md#三项目属性)
     * [3.1 order属性](readmd/flex弹性布局.md#3.1-order属性)
     * [3.2 flex-grow属性](readmd/flex弹性布局.md#3.2-flex-grow属性)
     * [3.3 flex-shrink属性](readmd/flex弹性布局.md#3.3-flex-shrink属性)
