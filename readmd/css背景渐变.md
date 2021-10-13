@@ -42,6 +42,9 @@
 	</body>
 	</html>
 	```
+    效果
+    
+    ![](../images/css/线性渐变__从上到下.png)
 
 * 线性渐变--从左到右
 	```css
@@ -78,6 +81,9 @@
 	</body>
 	</html>
 	```
+    效果
+    
+    ![](../images/css/线性渐变__从左到右.png)
 
 * 线性渐变--对角
 
@@ -116,6 +122,9 @@
 	</body>
 	</html>
 	```
+    效果
+    
+    ![](../images/css/线性渐变__对角.png)
 
 ### 角度渐变
 想要在渐变的方向上做更多的控制，你可以定义一个角度，而不用预定义方向（to bottom、to top、to right、to left、to bottom right，等等）。
@@ -154,7 +163,7 @@
 	#grad2 {
 	  height: 100px;
 	  background-color: red; /* 浏览器不支持的时候显示 */
-	  background-image: linear-gradient(90deg, red, yellow); 
+	  background-image: linear-gradient(5deg, red, yellow); 
 	}
 
 	#grad3 {
@@ -175,7 +184,7 @@
 	<h3>线性渐变 - 使用不同的角度</h3>
 
 	<div id="grad1" style="text-align:center;">0deg</div><br>
-	<div id="grad2" style="text-align:center;">90deg</div><br>
+	<div id="grad2" style="text-align:center;">5deg</div><br>
 	<div id="grad3" style="text-align:center;">180deg</div><br>
 	<div id="grad4" style="text-align:center;">-90deg</div>
 
@@ -184,6 +193,10 @@
 	</body>
 	</html>
 	```
+	
+	效果
+	
+	![](../images/css/线性渐变__使用不同的角度.png)
 
 ### 使用多个颜色节点
 * 带有多个颜色节点的从上到下的线性渐变
@@ -236,6 +249,11 @@
     </body>
     </html>
     ```
+    效果
+	
+	![](../images/css/多个颜色节点01.png)  
+	![](../images/css/多个颜色节点02.png)  
+    
     
 * 一个带有彩虹颜色和文本的线性渐变
     ```css
@@ -270,6 +288,9 @@
     </body>
     </html>
     ```
+    效果
+	
+	![](../images/css/彩虹颜色.png)  
 
 ### 使用透明度（transparent）
 CSS3 渐变也支持透明度（transparent），可用于创建减弱变淡的效果。
@@ -309,6 +330,9 @@ rgba() 函数中的最后一个参数可以是从 0 到 1 的值，它定义了�
     </body>
     </html>
     ```
+    效果
+	
+	![](../images/css/线性渐变__透明度.png)  
 
 ### 重复的线性渐变
 ```css
@@ -370,6 +394,10 @@ rgba() 函数中的最后一个参数可以是从 0 到 1 的值，它定义了�
 </body>
 </html>
 ```
+效果
+	
+![](../images/css/重复的线性渐变01.png)  
+![](../images/css/重复的线性渐变02.png)  
 
 ## 径向渐变
 径向渐变由它的中心定义。
@@ -419,6 +447,9 @@ rgba() 函数中的最后一个参数可以是从 0 到 1 的值，它定义了�
     </body>
     </html>
     ```
+    效果
+	
+    ![](../images/css/径向渐变__颜色节点均匀分布.png)  
 
 * 径向渐变--颜色节点不均匀分布
     ```css
@@ -452,7 +483,10 @@ rgba() 函数中的最后一个参数可以是从 0 到 1 的值，它定义了�
     </body>
     </html>
     ```
-
+    效果
+	
+    ![](../images/css/径向渐变__颜色节点不均匀分布.png)
+    
 ### 设置形状
 shape 参数定义了形状。它可以是值 circle 或 ellipse。
 
@@ -502,6 +536,9 @@ shape 参数定义了形状。它可以是值 circle 或 ellipse。
     </body>
     </html>
     ```
+    效果
+	
+    ![](../images/css/设置形状.png)
 
 ### 不同尺寸大小关键字的使用
 size 参数定义了渐变的大小。它可以是以下四个值：
