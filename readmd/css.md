@@ -280,6 +280,20 @@ font-size: 20px;
     
     >如：.abc:not(div) {}
 
+#### 最后一个元素除外
+
+* 示例：给ul li画格子
+```css
+.kline-nav ul {
+    display: inline-block;
+    border: 1px #868B8F solid;
+}
+
+.kline-nav ul li:not(:last-child) {
+    border-right: 1px #868B8F solid;
+}
+```
+
 ## 选择器的优先级
 ### 优先级值
 * 内联样式：1000
