@@ -253,7 +253,12 @@ font-size: 20px;
     >选中元素的innerHTML的最后边  
     一般该伪类都会结合content一起使用，通过content可以向指定位置添加内容
 ### 子元素的伪类选择器
+* :first
+
+    只匹配一个元素
 * :first-child
+
+    将为每个父元素匹配第一个子元素
 * :last-child
 * :nth-child(n|even|odd|formula)
     ```text
@@ -274,6 +279,27 @@ font-size: 20px;
 * :first-of-type
 * :last-of-type
 * :nth-of-type(n|even|odd|formula)，参数同nth-child
+
+* :first与:first-child的区别
+    ```html
+    <ul>
+        <li>John</li>
+        <li>Karl</li>
+        <li>Brandon</li>
+    </ul>
+
+    <ul>
+        <li>Glen</li>
+        <li>Tane</li>
+        <li>Ralph</li>
+    </ul>
+    ```
+
+    ```js
+    $("li:first-child")  // 只匹配第一个ul 下的第一个li
+
+    $("li:first-child")  // 匹配两个ul下的第一个li
+    ```
 
 ### 否定伪类选择器
 * :not(选择器)
