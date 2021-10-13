@@ -100,6 +100,7 @@ html-css
 * [伪类、伪元素选择器](readmd/css.md#伪类和伪元素选择器)
     * [子元素的伪类选择器](readmd/css.md#子元素的伪类选择器)
     * [否定伪类选择器](readmd/css.md#否定伪类选择器)
+        * [最后一个元素除外](readmd/css.md#最后一个元素除外)
 * [选择器的优先级](readmd/css.md#选择器的优先级)
     * [优先级值](readmd/css.md#优先级值)
     * [优先规则](readmd/css.md#优先规则)
