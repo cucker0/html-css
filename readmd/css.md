@@ -709,6 +709,191 @@ block块元素会独占页面中的一行，无论有多少内容
     100: 完全不透明
     ```
 
+### 背景渐变
+[背景渐变](https://www.runoob.com/css3/css3-gradients.html)
+
+#### 线性渐变
+* 语法
+	```css
+	background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+	```
+
+* 线性渐变--从上到下（默认情况下）
+
+	```css
+	#grad {
+		background-image: linear-gradient(#e66465, #9198e5);
+	}
+	```
+
+	从顶部开始的线性渐变。起点是红色，慢慢过渡到蓝色：
+	```html
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<meta charset="utf-8"> 
+	<title>菜鸟教程(runoob.com)</title> 
+	<style>
+	#grad1 {
+		height: 200px;
+		background-color: red; /* 浏览器不支持时显示 */
+		background-image: linear-gradient(#e66465, #9198e5);
+	}
+	</style>
+	</head>
+	<body>
+
+	<h3>线性渐变 - 从上到下</h3>
+	<p>从顶部开始的线性渐变。起点是红色，慢慢过渡到蓝色：</p>
+
+	<div id="grad1"></div>
+
+	<p><strong>注意：</strong> Internet Explorer 9 及之前的版本不支持渐变。</p>
+
+	</body>
+	</html>
+	```
+
+* 线性渐变--从左到右
+	```css
+	#grad {
+	  height: 200px;
+	  background-image: linear-gradient(to right, red , yellow);
+	}
+	```
+	
+	从左边开始的线性渐变。起点是红色，慢慢过渡到黄色
+	```html
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<meta charset="utf-8"> 
+	<title>菜鸟教程(runoob.com)</title> 
+	<style>
+	#grad1 {
+		height: 200px;
+		background-color: red; /* 不支持线性的时候显示 */
+		background-image: linear-gradient(to right, red , yellow);
+	}
+	</style>
+	</head>
+	<body>
+
+	<h3>线性渐变 - 从左到右</h3>
+	<p>从左边开始的线性渐变。起点是红色，慢慢过渡到黄色：</p>
+
+	<div id="grad1"></div>
+
+	<p><strong>注意：</strong> Internet Explorer 8 及之前的版本不支持渐变。</p>
+
+	</body>
+	</html>
+	```
+
+* 线性渐变--对角
+
+	通过指定水平和垂直的起始位置来制作一个对角渐变
+	```css
+	#grad {
+	  height: 200px;
+	  background-image: linear-gradient(to bottom right, red, yellow);
+	}
+	```
+	
+	从左上角开始（到右下角）的线性渐变。起点是红色，慢慢过渡到黄色
+	```html
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<meta charset="utf-8"> 
+	<title>菜鸟教程(runoob.com)</title> 
+	<style>
+	#grad1 {
+		height: 200px;
+		background-color: red; /* 不支持线性的时候显示 */
+		background-image: linear-gradient(to bottom right, red , yellow);
+	}
+	</style>
+	</head>
+	<body>
+
+	<h3>线性渐变 - 对角</h3>
+	<p>从左上角开始（到右下角）的线性渐变。起点是红色，慢慢过渡到黄色：</p>
+
+	<div id="grad1"></div>
+
+	<p><strong>注意：</strong> Internet Explorer 8 及之前的版本不支持渐变。</p>
+
+	</body>
+	</html>
+	```
+
+#### 角度渐变
+想要在渐变的方向上做更多的控制，你可以定义一个角度，而不用预定义方向（to bottom、to top、to right、to left、to bottom right，等等）。
+
+* 语法
+	```css
+	background-image: linear-gradient(angle, color-stop1, color-stop2);
+	```
+	角度是指水平线和渐变线之间的角度，逆时针方向计算。换句话说，0deg 将创建一个从下到上的渐变，90deg 将创建一个从左到右的渐变。
+	
+	但是，请注意很多浏览器（Chrome、Safari、firefox等）的使用了旧的标准，即 0deg 将创建一个从左到右的渐变，90deg 将创建一个从下到上的渐变。换算公式 90 - x = y 其中 x 为标准角度，y为非标准角度。
+
+* 带有指定的角度的线性渐变
+	
+	```css
+	#grad {
+	  background-image: linear-gradient(-90deg, red, yellow);
+	}
+	```
+	
+	```html
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<meta charset="utf-8"> 
+	<title>菜鸟教程(runoob.com)</title> 
+	<style>
+	#grad1 {
+	  height: 100px;
+	  background-color: red; /* 浏览器不支持的时候显示 */
+	  background-image: linear-gradient(0deg, red, yellow); 
+	}
+
+	#grad2 {
+	  height: 100px;
+	  background-color: red; /* 浏览器不支持的时候显示 */
+	  background-image: linear-gradient(90deg, red, yellow); 
+	}
+
+	#grad3 {
+	  height: 100px;
+	  background-color: red; /* 浏览器不支持的时候显示 */
+	  background-image: linear-gradient(180deg, red, yellow); 
+	}
+
+	#grad4 {
+	  height: 100px;
+	  background-color: red; /* 浏览器不支持的时候显示 */
+	  background-image: linear-gradient(-90deg, red, yellow); 
+	}
+	</style>
+	</head>
+	<body>
+
+	<h3>线性渐变 - 使用不同的角度</h3>
+
+	<div id="grad1" style="text-align:center;">0deg</div><br>
+	<div id="grad2" style="text-align:center;">90deg</div><br>
+	<div id="grad3" style="text-align:center;">180deg</div><br>
+	<div id="grad4" style="text-align:center;">-90deg</div>
+
+	<p><strong>注意：</strong> Internet Explorer 9 及之前的版本不支持渐变。</p>
+
+	</body>
+	</html>
+	```
+	
 ## 其他
 ### [清除默认样式](../source_10/polo-360/css/reset.css)
 ### 清除a标签默认样式
