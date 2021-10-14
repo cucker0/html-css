@@ -84,6 +84,13 @@ html-css
     * [3.3 flex-shrink属性](readmd/flex弹性布局.md#3.3-flex-shrink属性)
     * [3.4 align-self属性](readmd/flex弹性布局.md#3.4-align-self属性)
 
+* [应用示例](readmd/flex弹性布局.md#应用示例)
+    * [文本垂直居中](readmd/flex弹性布局.md#文本垂直居中)
+    * [偏移](readmd/flex弹性布局.md#偏移)
+    * [偏移并反转排列](readmd/flex弹性布局.md#偏移并反转)
+    * [垂直排列](readmd/flex弹性布局.md#垂直排列)
+    * [垂直并反序排列](readmd/flex弹性布局.md#垂直并反序排列)
+    
 ***
 
 #### CSS
