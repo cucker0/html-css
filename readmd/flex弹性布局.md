@@ -210,3 +210,265 @@ order属性定义项目的排列顺序。数值越小，排列越靠前，默认
 
 **弹性布局默认不改变项目的宽度，但是它默认改变项目的高度。  
 如果项目没有显式指定高度，就将占据容器的所有高度。**
+
+
+## 应用示例
+### 文本垂直居中
+
+```css
+/* 文本垂直居中 */
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+
+/*
+display: flex;  // 这是Flexbox的根本所在。就是把当前元素设置为一个Flexbox(而不是block或inline-block之类)。
+
+align-items: center;  // 这是要在Flexbox中沿交叉轴对齐项目。上面是要实现垂直居中文本。
+
+justify-content: center;  // 这里设置内容沿主轴居中。类似于，word软件中用于左、中、右对齐文本的按钮。
+*/
+```
+
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+<style>
+.Header{
+	width: 100%;
+	height: 130px;
+	background-color: #038c5a;
+	color: #ebebeb;
+	font-family: 'Oswald',sans-serif;
+	font-size: 2rem;
+	text-transform: uppercase;
+	
+	/* 文本垂直居中 */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+ 
+</style>
+</head>
+<body>
+
+<div class="Header">
+	hello world!(垂直居中)
+</div>
+</body>
+</html>
+```
+效果
+
+![](../images/flex/文本垂直居中_水平居中.png)
+
+
+### 偏移
+
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+<style>
+.Header2{
+	background-color: indigo;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1rem;
+	min-height: 2.75rem;
+    padding: 0 1rem;
+    
+	display: flex;
+	align-items: center;
+	
+}
+.ListItem,
+.LastItem {
+	color: #ebebeb;
+	text-decoration: none;
+}
+ 
+.ListItem {
+	margin-right: 1rem;
+}
+ 
+.LastItem {
+	margin-left: auto;  // 左侧所有可用的外边距
+}
+ 
+</style>
+</head>
+<body>
+<div class="Header2">
+	<a href="#" class="ListItem">首页</a>
+	<a href="#" class="ListItem">关于我们</a>
+	<a href="#" class="ListItem">产品</a>
+	<a href="#" class="ListItem">活动</a>
+	<a href="#" class="LastItem">联系我们</a>
+</div>
+</body>
+</html>
+```
+效果
+
+![](../images/flex/偏移.png)
+
+### 偏移并反转
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+<style>
+.Header2{
+	background-color: indigo;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1rem;
+	min-height: 2.75rem;
+    padding: 0 1rem;
+    
+	display: flex;
+	flex-direction: row-reverse;  // 反转
+	justify-content: center;  // 文本垂直居中
+	align-items: center;
+	
+}
+.ListItem,
+.LastItem {
+	color: #ebebeb;
+	text-decoration: none;
+}
+ 
+.ListItem {
+	margin-right: 1rem;
+}
+ 
+.LastItem {
+	// margin-left: auto;
+	margin-right: auto;
+}
+ 
+</style>
+</head>
+<body>
+<div class="Header2">
+	<a href="#" class="ListItem">首页</a>
+	<a href="#" class="ListItem">关于我们</a>
+	<a href="#" class="ListItem">产品</a>
+	<a href="#" class="ListItem">活动</a>
+	<a href="#" class="LastItem">联系我们</a>
+</div>
+</body>
+</html>
+```
+效果
+
+![](../images/flex/反转并偏移.png)
+
+
+### 垂直排列
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+<style>
+.Header2{
+	/* width: 400px; */
+	background-color: indigo;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1rem;
+	min-height: 2.75rem;
+	padding: 0 1rem;
+	/* 垂直排列 --start */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* 垂直排列 --end */
+}
+.ListItem,
+.LastItem {
+	color: #ebebeb;
+	text-decoration: none;
+}
+ 
+.ListItem {
+	margin-right: 1rem;
+}
+ 
+</style>
+</head>
+<body>
+<div class="Header2">
+	<a href="#" class="ListItem">首页</a>
+	<a href="#" class="ListItem">关于我们</a>
+	<a href="#" class="ListItem">产品</a>
+	<a href="#" class="ListItem">活动</a>
+	<a href="#" class="LastItem">联系我们</a>
+</div>
+</body>
+</html>
+```
+效果
+
+![](../images/flex/垂直排列.png)
+
+### 垂直并反序排列
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+<style>
+.Header2{
+	/* width: 400px; */
+	background-color: indigo;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1rem;
+	min-height: 2.75rem;
+	padding: 0 1rem;
+	/* 垂直排列 --start */
+	display: flex;
+	flex-direction:column-reverse;  /* 反序 */
+	align-items: center;
+	/* 垂直排列 --end */
+}
+.ListItem,
+.LastItem {
+	color: #ebebeb;
+	text-decoration: none;
+}
+ 
+.ListItem {
+	margin-right: 1rem;
+}
+ 
+</style>
+</head>
+<body>
+<div class="Header2">
+	<a href="#" class="ListItem">首页</a>
+	<a href="#" class="ListItem">关于我们</a>
+	<a href="#" class="ListItem">产品</a>
+	<a href="#" class="ListItem">活动</a>
+	<a href="#" class="LastItem">联系我们</a>
+</div>
+</body>
+</html>
+```
+效果
+
+![](../images/flex/垂直并反序排列.png)

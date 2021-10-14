@@ -264,8 +264,8 @@ table是块元素
     border-spacing  table和td边框之间默认有一个距离
     border-collapse: collapse;  设置表格的边框合并，border宽度为0，如果设置了边框合并，则border-spacing自动失效
     border-spacing: 长度;  相邻单元格的边框间的距离，仅border-collapse: separate; "边框分离"模式时生效
-    rowspan="n"  由此单元格纵向向下合并n个单元格
-    colspan="n"  由此单元格横向向右合并n个单元格
+    rowspan="n"  由此单元格纵向向下合并n个单元格，写在 <td>、<th>标签中
+    colspan="n"  由此单元格横向向右合并n个单元格，写在 <td>、<th>标签中
     ```
     示例：
     ```css
@@ -316,6 +316,43 @@ table是块元素
     </tbody>
 </table>
 ```
+
+### 合并单元格
+*  单元格跨行
+    ```html
+    <table>
+        <tr>
+            <td>星期六</td>
+            <td>星期日</td>
+        </tr>
+        
+        <tr>
+            <td colspan="2">周末</td>
+        </tr>
+    </table>
+    ```
+    效果
+    ![](../images/table02.png)
+
+* 单元格跨列
+    ```html
+    <table>
+        <tr>
+            <td rowspan="3">一季度</td>
+            <td>1月份</td>
+        </tr>
+        
+        <tr>
+            <td>2月份</td>
+        </tr>
+        <tr>
+            <td>3月份</td>
+        </tr>
+    </table>
+    ```
+    
+    效果
+    ![](../images/table03.png)
 
 ### 第一行colspan合并单元格后，设置td宽度失效的解决方法
 为防止td被连串字符撑开，表格一般会定义一个table-layout: fixed;
