@@ -522,7 +522,8 @@ input、textarea标签用于搜集用户信息
     <textarea rows="10" cols="30"></textarea>
     ```
     rows  文本框的行数，内容超过后，会出现滚动条  
-    cols  每行的字数
+    cols  每行的字数  
+    也可以通过 css 样式的 width、height 这只文本框的宽与高
 
 ## select下拉列表
 ```text
