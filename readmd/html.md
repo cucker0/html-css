@@ -504,6 +504,17 @@ input、textarea标签用于搜集用户信息
         button  按钮，value为按钮显示的文本
         image
         hidden
+        email
+        tel
+        number
+        color
+        date
+        time
+        url
+        month
+        week
+        range
+        search
     ```
 
 * textarea多行文本域
