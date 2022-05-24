@@ -498,7 +498,7 @@ input、textarea标签用于搜集用户信息
         radio  单选按钮，通过name属性进行分组，name属性相同是一组按钮
         checkbox  复选框，通过name属性进行分组，name属性相同是一组复选框
         password  密码域
-        file  文件
+        file  文件. <input type="file" name="imgs" multiple="multiple"> 可选择多个文件
         reset  重置按钮，value为按钮显示的文本
         submit  提交按钮，value为按钮显示的文本
         button  按钮，value为按钮显示的文本
