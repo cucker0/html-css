@@ -530,7 +530,7 @@ input、textarea标签用于搜集用户信息
     * selected="selected"
         >表示首次加载时应当被选中
     * multiple="multiple"
-        >多选的下拉列表，默认单选
+        >设置为多选的下拉列表。缺省该属性则为 单选下拉列表
 
 select示例
 ```html
