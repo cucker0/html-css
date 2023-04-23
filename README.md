@@ -134,3 +134,4 @@ html-css
     * [多个inline-block元素垂直方向居中](readmd/css.md#多个inline-block元素垂直方向居中)
     * [cursor光标样式](readmd/css.md#cursor光标样式)
     * [vertical-align属性](readmd/css.md#vertical-align属性)
+    * [去掉点击html页面div等元素出现闪烁光标](readmd/css.md#去掉点击html页面div等元素出现闪烁光标)

@@ -822,3 +822,31 @@ length
 
 inherit	    规定应该从父元素继承 vertical-align 属性的值。
 ```
+
+## 其他
+### 去掉点击html页面div等元素出现闪烁光标
+* 问题
+
+点击网页中的文本，总是会有光标闪烁。
+
+
+* 解决方法
+
+利用 css 样把光标颜色设置为透明，式达到隐藏光标的效果。
+
+* 示例
+```css
+/* 隐藏html 点击 div 等元素出现的闪烁光标 */
+div, p, span, td {
+    caret-color: transparent;
+}
+
+/* input 输入框内的闪烁光标恢复自动 */
+input {
+    caret-color: auto;
+}
+```
+
+
+
+
