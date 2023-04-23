@@ -420,6 +420,8 @@ block块元素会独占页面中的一行，无论有多少内容
 * rem
     
     >相对于根元素`<html>`的font-size值的倍数，rem是 root element缩写
+* vh
+    >全屏窗口高度为 100vh
 
 ### 颜色单位
 * 颜色单词
