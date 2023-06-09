@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>marquee 滑块</title>
+    <!-- jQuery library ( -->
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <!-- jquery.marquee1 Javascript file -->
+    <script src="./js/jquery.marquee1.6.0.js"></script>
+
+    <style>
+        .row1 .marquee {
+            width: 300px; /* the plugin works for responsive layouts so width is not necessary */
+            overflow: hidden;
+            border:1px solid #ccc;
+        }
+        
+        .row2 {
+            margin-top: 10px;
+        }
+        .row2 .marquee {
+            width: 1200px;
+            overflow: hidden;
+            /* background: #bfa; */
+        }
+        .row2 li {
+            float: left;
+            list-style: none;
+            width: 222px;
+            height: 120px;
+            margin-right: 25px;
+            border: 1px solid #dadada;
+            overflow:hidden;
+            position: relative;
+        }
+
+        .row2 li .pic img {
+            height: 52px;
+            max-width: 200px;
+            position: absolute;
+            left: 50%;
+            top: 57%;
+            transform: translate(-50%);
+        }
+
+        .row2 p{
+            margin-top: 6px;
+            text-align: center;
+        }
+
+        .row2 p[code] {
+            border-bottom: 1px solid #dadada;
+            padding-bottom: 2px;
+            /*margin: 0 20px;*/
+        }
+
+        .row2 li p:first-child {
+            font-weight: bolder;
+        }
+        
+        .myclearfix:before,
+        .myclearfix:after {
+            display: table;
+            content: "";
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="row1">
+    <div class='marquee' data-duration='5000' data-gap='10' data-duplicated='true' >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit END.
+    </div>
+</div>
+
+<div class="row2">
+    <div class='marquee myclearfix' >
+        <li>
+            <!-- 股票信息 -->
+            <p>博力威（688345）</p>
+            <p code="688345.SH"><b>35.57</b>（<b class="green">-0.23</b>，<b class="green">-0.64%</b>）</p>
+            <a href="http://www.greenway-battery.com" target="_Blank">
+                <div class="pic">
+                    <img src="https://image.dglca.com/profile/upload/2021/09/16/cf4d39b8f7c1bfde6205db5b732e98ae.jpg">
+                </div>
+            </a>
+        </li>
+        <li>
+            <!-- 股票信息 -->
+            <p>宇瞳光学（300790）</p>
+            <p code="300790.SZ"><b>14.76</b>（<b class="red">0.08</b>，<b class="red">0.54%</b>）</p>
+            <a href="http://www.ytot.com/" target="_Blank">
+                <div class="pic">
+                    <img src="https://image.dglca.com/profile/upload/2021/09/16/af5b5da7b7c80cdfb0f783df56abadc0.jpg">
+                </div>
+            </a>
+        </li>
+        <li>
+            <!-- 股票信息 -->
+            <p>金太阳（300606）</p>
+            <p code="300606.SZ"><b>15.78</b>（<b class="red">0.01</b>，<b class="red">0.06%</b>）</p>
+            <a href="http://www.chinagoldensun.cn/" target="_Blank">
+                <div class="pic">
+                    <img src="https://image.dglca.com/profile/upload/2021/09/16/1fcc4fbd6eef2241986fc222e3aa2d9c.png">
+                </div>
+            </a>
+        </li>
+        <li>
+            <!-- 股票信息 -->
+            <p>惠伦晶体（300460）</p>
+            <p code="300460.SZ"><b>9.45</b>（<b class="green">-0.05</b>，<b class="green">-0.53%</b>）</p>
+            <a href="http://www.dgylec.com" target="_Blank">
+                <div class="pic">
+                    <img src="https://image.dglca.com/profile/upload/2021/09/16/414d0707519da7314324c472ba7f0b9d.png">
+                </div>
+            </a>
+        </li>
+        <li>
+            <!-- 股票信息 -->
+            <p>奥普特（688686）</p>
+            <p code="688686.SH"><b>143.11</b>（<b class="green">-1.89</b>，<b class="green">-1.30%</b>）</p>
+            <a href="https://www.optmv.com/" target="_Blank">
+                <div class="pic">
+                    <img src="https://image.dglca.com/profile/upload/2021/09/16/a348e3afd5c226664eb75c00fe52f4fe.png">
+                </div>
+            </a>
+
+        </li>
+    </div>
+</div>
+
+<script>
+    
+    // 加载Marquee
+    function loadMarquee() {
+        // row1滑块，以元素属性设置 Marquee 的相当参数
+        $('.row1 .marquee').marquee();
+        
+        
+        // row2 滑块
+        /**
+         * Example of starting a plugin with options.
+         * I am just passing some of the options in the following example.
+         * you can also start the plugin using $('.marquee').marquee(); with defaults
+        */
+        $('.row2 .marquee').marquee({
+            // duration in milliseconds of the marquee
+            duration: 15000,
+            // Speed is measured in pixels per second(n px/s). Speed will override duration.
+            speed: 50,
+            // gap in pixels between the tickers
+            gap: 5,
+            // time in milliseconds before the marquee will start animating
+            delayBeforeStart: 0,
+            //  Direction towards which the marquee will animate 'left' / 'right' / 'up' / 'down'. Default: 'left'. 
+            direction: 'right',
+            //true or false - should the marquee be duplicated to show an effect of continues flow
+            duplicated: true,
+            pauseOnHover: true,
+            startVisible: true,
+        });
+    }
+    
+    // DOM 就绪后
+    $(function() {
+        loadMarquee();
+    });  
+</script>
+</body>
+</html>
