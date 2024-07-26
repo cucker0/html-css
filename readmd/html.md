@@ -445,7 +445,7 @@ table {
             <td>10.25</td>
             <td>600</td>
             <td>200</td>
-            <td>400</td>
+            <td>400xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</td>
         </tr>
     </tbody>
 </table>
