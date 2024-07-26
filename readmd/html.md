@@ -412,6 +412,46 @@ table是块元素
     ```
     效果  
     ![](../images/table20210922.png)
+### HTML长文本内容把td标签撑大的解决方法
+在 table 标签内添加下面的样式
+```html
+table {
+    table-layout: fixed;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+```
+
+* 示例
+```html
+<table style="table-layout: fixed;word-break: break-all; word-wrap: break-word">
+    <thead>
+        <tr>
+            <th style="width: 25%">日期</th>
+            <th style="width: 25%">收入</th>
+            <th style="width: 25%">支出</th>
+            <th style="width: 25%">合计</th>
+        </tr>    
+    </thead>
+          
+    <tbody>
+        <tr>
+            <td>10.24</td>
+            <td>500</td>
+            <td>300</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>10.25</td>
+            <td>600</td>
+            <td>200</td>
+            <td>400</td>
+        </tr>
+    </tbody>
+</table>
+```
+
+
 
 ## form表单
 form>标签用于为用户输入创建 HTML 表单
